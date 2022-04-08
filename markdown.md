@@ -1,22 +1,3 @@
-*Hello there!*
-**It's nice to meet you**
-# I'm Rebecca
-## I am a first year
-[My link](https://rebenguy.github.io/cse15l-lab-reports/)	
-![Image](https://siteselection.com/issues/2019/mar/images/HotelValencia_SanJose.jpg)	
-> Here is what I like:
-* Food
-* Sports
-* Friends
-Here is another list:
+![Image](<img width="1440" alt="Screen Shot 2022-04-08 at 12 49 40 PM" src="https://user-images.githubusercontent.com/103283828/162516870-5599804a-c043-4507-a78d-a7805886a9c1.png">
+)	
 
----
-1. What's up
-2. How's it going
-
-`This is inclining`
-
-```
-Code Block
-right here
-```
