@@ -2,7 +2,7 @@
 **It's nice to meet you**
 # I'm Rebecca
 ## I am a first year
-[Link](https://rebenguy.github.io/cse15l-lab-reports/)	
+[My link](https://rebenguy.github.io/cse15l-lab-reports/)	
 ![Image](https://images.app.goo.gl/bVMmpogibiRQkTyJ9)	
 > Here is what I like:
 * Food
