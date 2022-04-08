@@ -3,7 +3,7 @@
 # I'm Rebecca
 ## I am a first year
 [My link](https://rebenguy.github.io/cse15l-lab-reports/)	
-![Image](https://images.app.goo.gl/bVMmpogibiRQkTyJ9)	
+![Image](https://siteselection.com/issues/2019/mar/images/HotelValencia_SanJose.jpg)	
 > Here is what I like:
 * Food
 * Sports
