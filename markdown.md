@@ -3,7 +3,7 @@
 # I'm Rebecca
 ## I am a first year
 [Link](https://rebenguy.github.io/cse15l-lab-reports/)	
-![Image](https://www.archdaily.com/374799/ucsd-a-built-history-of-modernism/5196626fb3fc4b96d7000008-ucsd-a-built-history-of-modernism-photo)	
+![Image](https://images.app.goo.gl/bVMmpogibiRQkTyJ9)	
 > Here is what I like:
 * Food
 * Sports
