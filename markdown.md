@@ -3,7 +3,7 @@
 # I'm Rebecca
 ## I am a first year
 [My link](https://rebenguy.github.io/cse15l-lab-reports/)	
-![Image](https://images.app.goo.gl/bVMmpogibiRQkTyJ9)	
+![Image](https://ucsdnews.ucsd.edu/news_uploads/Resized_Geisel_Library_08.31.jpg)	
 > Here is what I like:
 * Food
 * Sports
