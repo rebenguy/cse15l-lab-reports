@@ -8,7 +8,8 @@
 * Food
 * Sports
 * Friends
-Here is another list:
+
+## Here is another list:
 
 ---
 1. What's up
@@ -20,3 +21,5 @@ Here is another list:
 Code Block
 right here
 ```
+
+![Image](https://user-images.githubusercontent.com/103283828/162517312-ce0ccfe2-5dbc-4de6-837a-a08dbc788926.png)
