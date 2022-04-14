@@ -172,3 +172,7 @@ You should see something like this:
 * **;** - Run multiple commands on the same line by separating them with ;
 
 * **Up-arrow** - The up-arrow recalls the last command ran
+
+Here is an example of using ; to run multiple commands on the same line:
+
+![Image](shortcut.png)
