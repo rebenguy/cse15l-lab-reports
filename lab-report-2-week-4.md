@@ -46,7 +46,7 @@ When we ran the program, it kept running and we were forced to `Ctrl + C` to qui
 
 ![Image](Ctrl.png)
 
-Similarly to `Error #1`, the **bug** within the program is that the program causes an infinite loop since the code searches for an open parathesis `"("` or colon `":"` after the closed bracket `"]"`. Since we fixed `Error #1` by having the program detect whether the next character after the closed bracket `"]"` is an open parenthesis `"("` or a colon `":"`, if the program does not detect either one after the closed bracket `"]"`, the `if-statement` does not return True and thus does not run. As such, `currentIndex` remains `0`, and since `currentIndex` is less than `markdown.length`, the while loop loops again. This causes a **symptom** of the program being stuck in an infinite loop:
+Similarly to *Error #1*, the **bug** within the program is that the program causes an infinite loop since the code searches for an open parathesis `"("` or colon `":"` after the closed bracket `"]"`. Since we fixed *Error #1* by having the program detect whether the next character after the closed bracket `"]"` is an open parenthesis `"("` or a colon `":"`, if the program does not detect either one after the closed bracket `"]"`, the `if-statement` does not return True and thus does not run. As such, `currentIndex` remains `0`, and since `currentIndex` is less than `markdown.length`, the while loop loops again. This causes a **symptom** of the program being stuck in an infinite loop:
 
 ![Image](InfLoopPrint.png)
 
@@ -62,11 +62,11 @@ To make sure that the program realizes when there is no link, we simply added an
 
 The third change we made to `MarkdownParse.java` was to accomodate for when there is an empty line after the links. This change was made due to an error in [test-file.md](https://raw.githubusercontent.com/rebenguy/markdown-parser/main/test-file.md).
 
-When we ran the program after fixing `Error 1` and `Error 2`, we got an `OutofMemoryError` error:
+When we ran the program after fixing *Error 1* and *Error 2*, we got an `OutofMemoryError` error:
 
 ![Image](test-file.png)
 
-Like `Error 1` and `Error 2`, the **bug** is that the program causes an infinite loop since the code searches for an open bracket `"["` after the closed parenthesis `")"`. Since there is an empty line, the program thinks that there is more to the file. Furthermore, since there is no open bracket `"["` after the closed parenthesis `"("`, the program returns `-1`, assigning `openBracket = -1`. The code also doesn't have a closed bracket `"]"`, so the program returns `-1` again, assigning `closedBracket = -1`. Since `char next = markdown.charAt(closeBracket + 1);` would be `char next = markdown.charAt(-1 + 1);`, the program assigns next as the character at index 0, which is `[`. Thus, the `if-else-statement` would return `False` and not run. This would mean that `currentIndex` would not be changed, and the while loop loops again. This causes a **symptom** of the program being stuck in an infinite loop:
+Like *Error 1* and *Error 2*, the **bug** is that the program causes an infinite loop since the code searches for an open bracket `"["` after the closed parenthesis `")"`. Since there is an empty line, the program thinks that there is more to the file. Furthermore, since there is no open bracket `"["` after the closed parenthesis `"("`, the program returns `-1`, assigning `openBracket = -1`. The code also doesn't have a closed bracket `"]"`, so the program returns `-1` again, assigning `closedBracket = -1`. Since `char next = markdown.charAt(closeBracket + 1);` would be `char next = markdown.charAt(-1 + 1);`, the program assigns next as the character at index 0, which is `[`. Thus, the `if-else-statement` would return `False` and not run. This would mean that `currentIndex` would not be changed, and the while loop loops again. This causes a **symptom** of the program being stuck in an infinite loop:
 
 ![Image](InfLoopPrint.png)
 
@@ -85,6 +85,6 @@ if (openParen == -1 || closeParen == -1){
 }
 ```
 
-This means that the program will  beak and exit the while loop if openBracket, closeBracket, openParen, or closeParen = -1:
+This means that the program will break and exit the while loop if openBracket, closeBracket, openParen, or closeParen = -1:
 
 ![Image](EmptySpace.png)
