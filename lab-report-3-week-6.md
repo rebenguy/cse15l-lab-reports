@@ -64,13 +64,19 @@ On the Github webstie, go to settings and press the `SSH and GPG keys` tab. This
 
 ![Image](github_ssh_keys.png)
 
-Now to find where the public key is stored in the course specific account, log into your course specific account using `ssh ieng6`, change the directory to .ssh by entering `cd. ssh`, and `ls`. After, we can use `cat (id_name.pub)` to view the contents of the file. If done correctly, it should look something like this:
+Now to find where the public key is stored in the course specific account, log into your course specific account using `ssh ieng6`, change the directory to .ssh by entering `cd .ssh`, and `ls`. After, we can use `cat (id_name.pub)` to view the contents of the file. If done correctly, it should look something like this:
 
 ![Image](public_key.png)
 
-We can also identify where the private key we made is stored on our user account by following the same directions to find where the public key we made is stored. After logging into our course specific account and changing to the .ssh directory, enter ls. Here, the private key is `id_rsa`:
+We can also identify where the private key we made is stored on our user account by following the same directions to find where the public key we made is stored. After logging into our course specific account and changing to the .ssh directory, enter *ls*. Here, the private key is `id_rsa`:
 
 ![Image](private_key.png)
+
+Now, we are able to commit and push from the command line on our ieng6 account! Down below is an example of making an edit, committing, and pushing. First, change the directory, in this case, I did `cd skill-demo` to change to the skill-demo directory. Then, I create a text file named *example.txt* by entering `touch example.txt`. To check that it is in the directory through `ls`. After confirming the file is in the directory, enter `git add example.txt` and `ls` to check that the file is still in the directory. Now to check the state of the working directory, enter `git status`. For this example, it shows that an edit of adding a new file has been made. To commit this change, use `git commit "(A message)"`. Finally, to upload the current repository content to the remote repository, use `git push`.
+
+![Image](ieng6_push.png)
+
+Now we cann successfully commit and push on our ieng6 account.
 
 ---
 > ## Copy whole directories with `scp -r`
