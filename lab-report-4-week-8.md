@@ -52,7 +52,7 @@ After running `make test`, the test case for Snippet 1 on both mine and the othe
 
 This is the error message that was produced for Snippet 1 for my markdown-parse: 
 
-![Image](Snippet1-failed-mine.png)
+![Image](snippet1-failed-mine.png)
 
 The output I received was: ```[url.com, `google.com, google.com]```
 
@@ -60,7 +60,7 @@ This is not the same as the expected output: ```[`google.com, google.com, ucsd.e
 
 This is the error message that was produced for Snippet 1 for the other group's  markdown-parse: 
 
-![Image](Snippet1-failed-other.png)
+![Image](snippet1-failed-other.png)
 
 The output they received was: ```[url].com, google.com, ucsd.edu]```
 
@@ -112,7 +112,7 @@ This is not the same as the expected output: ```[a.com, a.com(()), example.com]`
 
 This is the error message that was produced for Snippet 2 for the other group's  markdown-parse: 
 
-![Image](Snippet2-failed-other.png)
+![Image](snippet2-failed-other.png)
 
 The output they received was: ```[[(b].com, a.com(()), example.com]```
 
@@ -173,7 +173,7 @@ After running `make test`, the test case for Snippet 3 on both mine and the othe
 
 This is the error message that was produced for Snippet 3 for my markdown-parse: 
 
-![Image](Snippet3-failed-mine.png)
+![Image](snippet3-failed-mine.png)
 
 The output I received was: 
 ```
@@ -191,7 +191,7 @@ This is not the same as the expected output: ```https://sites.google.com/eng.ucs
 
 This is the error message that was produced for Snippet 3 for the other group's  markdown-parse: 
 
-![Image](Snippet3-failed-other.png)
+![Image](snippet3-failed-other.png)
 
 The output they received was: ```https://[www.twitter.com, /schedule, https://cse.ucsd.edu/, ), text```
 
