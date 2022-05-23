@@ -74,6 +74,8 @@ Do you think there is a small (<10 lines) code change that will make your progra
 
 * I think there is small code change that will make my program work for cases that use incline code with backticks. I can edit markdown-parse so that it can check for any backticks. If the backticks are only inside of the brackets and parenthesis, it should be a valid link. However, if there are backticks on the outside of the brackets and parenthesis, the program should check for base cases, such as whether or not there is only one backtick, whether or not it is in between ](, etc. Depending on the number and placement of the backticks, the program can determine if it will produce a valid link.
 
+---
+
 > # Snippet 2
 
 The second snippet we are testing is: 
@@ -118,11 +120,15 @@ The output they received was: ```[[(b].com, a.com(()), example.com]```
 
 This is not the same as the expected output: ```[a.com, a.com(()), example.com]```
 
+---
+
 > ## Snippet 2 Question
 
 Do you think there is a small (<10 lines) code change that will make your program work for snippet 2 and all related cases that nest parentheses, brackets, and escaped brackets? If yes, describe the code change. If not, describe why it would be a more involved change.
 
 * I think there isn't a small code change that will make my program work for cases that use nest parentheses, brackets, and escaped brackets. This is because I would have to check for several things. These things would include proper formatting of the nested parenthesis, brackets, and escaped brackets, whether or not they are complete `(such as [], (), or \\)`, whether or not there are links within links, etc. Taking all these things into account, I would assumed it would take more than 10 lines to implement.
+
+---
 
 > # Snippet 3
 
@@ -204,6 +210,3 @@ This is not the same as the expected output: ```https://sites.google.com/eng.ucs
 Do you think there is a small (<10 lines) code change that will make your program work for snippet 3 and all related cases that have newlines in brackets and parentheses? If yes, describe the code change. If not, describe why it would be a more involved change.
 
 * I think there is a small code change that will make my program work for cases that have newlines in brackets and parenthesis. I think that to solve this, can I can make the program detect empty lines. This way, if there is an empty line between the brackets or parenthesis, it will not be considered as a valid link. However, if the format of the link is correct, the ]( are together (not separated into different lines), and there are no empty lines in between, the link should be valid.
-
-
-I think there is small code change that will make my program work for cases that use incline code with backticks. I can edit markdown-parse so that it can check for any backticks. If the backticks are only inside of the brackets and parenthesis, it should be a valid link. However, if there are backticks on the outside of the brackets and parenthesis, the program should check for base cases, such as whether or not there is only one backtick, whether or not it is in between ](, etc. Depending on the number and placement of the backticks, the program can determine if it will produce a valid link.
